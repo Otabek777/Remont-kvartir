@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title></title>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+   </script>
 </head>
 <body>
     <header class="header">
@@ -68,9 +73,9 @@
                         <div class="content">
                             <div class="container">
                                 <div class="wrap">
-                                    <p class="banner__h1">Ремонт помещений в Новосибирске</p>
-                                    <p class="banner__text">Теперь возможно без предоплаты по ценам частных бригад</p>
-                                    <div class="banner__btns">
+                                    <p class="banner__h1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">Ремонт помещений в Новосибирске</p>
+                                    <p class="banner__text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Теперь возможно без предоплаты по ценам частных бригад</p>
+                                    <div class="banner__btns wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                                         <button class="banner__call">Заказать звонок</button>
                                         <button class="banner__list">
                                             Прайс лист
@@ -82,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="img">
+                        <div class="img wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                             <img src="img/services1.png" alt="">
                         </div>
                     </div>
@@ -164,7 +169,7 @@
         <section class="advantages">
             <div class="container">
                 <div class="advantages__box">
-                    <div class="advantages__block">
+                    <div class="advantages__block wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                                 <path d="M18.7197 24C18.0978 23.5263 18.0978 22.7368 18.5642 22.1053C20.119 20.3684 21.0519 18 21.0519 15.1579C21.0519 10.1053 17.7868 6 13.8998 6C10.0127 6 6.74762 10.1053 6.74762 15.1579C6.74762 18 7.68051 20.3684 9.23533 22.1053C9.70177 22.7368 9.70177 23.5263 9.07984 24L1.61673 30C0.372874 30.9474 1.15028 33 2.7051 33H25.4054C26.9602 33 27.5822 31.1053 26.3383 30L18.7197 24Z" stroke="#4E433D" stroke-width="1.5" stroke-miterlimit="10"/>
@@ -173,7 +178,7 @@
                         </div>
                         <p class="text">двойной контроль качества</p>
                     </div>
-                    <div class="advantages__block">
+                    <div class="advantages__block wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="29" height="33" viewBox="0 0 29 33" fill="none">
                                 <path d="M20.0001 18C24.4183 18 28 14.1944 28 9.5C28 4.80558 24.4183 1 20.0001 1C15.5818 1 12 4.80558 12 9.5C12 14.1944 15.5818 18 20.0001 18Z" stroke="#4E433D" stroke-width="1.5" stroke-miterlimit="10"/>
@@ -183,7 +188,7 @@
                         </div>
                         <p class="text">ремонт под ключ - 14 дней</p>
                     </div>
-                    <div class="advantages__block">
+                    <div class="advantages__block wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">
                                 <path d="M25.9098 6.46569C19.5594 6.46569 15.824 3.10219 14.3298 1.42044C13.7695 0.859854 13.0224 0.859854 12.6488 1.42044C10.9678 3.28905 7.23232 6.46569 1.06876 6.46569C1.06876 13.3796 -0.612194 27.581 12.6488 32.6263L13.5827 33L14.5166 32.6263C27.7776 27.581 25.9098 13.3796 25.9098 6.46569Z" stroke="#4E433D" stroke-width="1.5" stroke-miterlimit="10"/>
@@ -193,7 +198,7 @@
                         </div>
                         <p class="text">гарантия на работу - 3 года</p>
                     </div>
-                    <div class="advantages__block">
+                    <div class="advantages__block wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33" fill="none">
                                 <path d="M26.2121 24.386L22.4482 21.6667C21.6954 21.1228 21.6953 20.2164 22.2599 19.4912C24.1419 17.4971 25.2711 14.7778 25.2711 11.5146C25.2711 5.71345 21.3189 1 16.614 1C11.9091 1 7.95697 5.71345 7.95697 11.5146C7.95697 14.7778 9.08611 17.4971 10.9681 19.4912C11.5327 20.2164 11.5327 21.1228 10.7799 21.6667L1.74649 28.5556C0.240911 29.6433 1.18192 32 3.06389 32H23.9537" stroke="#4E433D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -202,7 +207,7 @@
                         </div>
                         <p class="text">персональный прораб 24/7</p>
                     </div>
-                    <div class="advantages__block">
+                    <div class="advantages__block wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="29" viewBox="0 0 34 29" fill="none">
                                 <path d="M31.8705 27.3529H2.12937C1.56466 27.3529 1 26.7882 1 26.2235V2.12942C1 1.56472 1.56466 1 2.12937 1H31.8705C32.4352 1 33 1.56472 33 2.12942V26.2235C33 26.7882 32.6235 27.3529 31.8705 27.3529Z" stroke="#4E433D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -217,19 +222,19 @@
         </section>
         <section class="company">
             <div class="company__box">
-                <div class="company__left">
+                <div class="company__left wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                     <img src="img/company.png" alt="">
                 </div>
                 <div class="company__right">
                     <div class="wrap">
-                        <div class="title_h2">
+                        <div class="title_h2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                             <p class="h2">Строительная компания «365+ ремонт квартир»</p>
                         </div>
-                        <p class="text">Наша компания занимается строительной деятельностью с 2009 года. Опыт на рынке строительства 12 лет.</p>
-                        <p class="text">Специалисты компании — аттестованные инженерно-технические работники с многолетним опытом работы в строительстве и ремонте частных домов, квартир, а также коммерческих помещений.</p>
-                        <p class="text">Компания «365 ремонт квартир» предлагает эффективные решения в строительстве и ремонте любых объектов. Имеем огромный опыт в сфере ремонта и отделки; Проектируем объекты любой сложности; Строим под ключ</p>
+                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Наша компания занимается строительной деятельностью с 2009 года. Опыт на рынке строительства 12 лет.</p>
+                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Специалисты компании — аттестованные инженерно-технические работники с многолетним опытом работы в строительстве и ремонте частных домов, квартир, а также коммерческих помещений.</p>
+                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">Компания «365 ремонт квартир» предлагает эффективные решения в строительстве и ремонте любых объектов. Имеем огромный опыт в сфере ремонта и отделки; Проектируем объекты любой сложности; Строим под ключ</p>
                         <div class="box">
-                            <div class="block">
+                            <div class="block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 34 30" fill="none">
                                         <path d="M16.7522 8.67041C16.7522 12.9109 14.4941 16.3408 11.7402 16.3408C8.9863 16.3408 6.7832 12.9109 6.7832 8.67041" stroke="#4E433D" stroke-width="1.5" stroke-miterlimit="10"/>
@@ -247,7 +252,7 @@
                                 </div>
                                 <p class="h5">Опытная команда профессионалов</p>
                             </div>
-                            <div class="block">
+                            <div class="block wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">
                                         <path d="M20.3135 2.95923H23.1311C24.7193 2.95923 26 4.21511 26 5.77241V30.1868C26 31.7441 24.7193 33 23.1311 33H3.86885C2.28074 33 1 31.7441 1 30.1868V5.77241C1 4.21511 2.28074 2.95923 3.86885 2.95923H6.63525" stroke="#4E433D" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
@@ -265,7 +270,7 @@
                                 </div>
                                 <p class="h5">Бесплатная смета</p>
                             </div>
-                            <div class="block">
+                            <div class="block wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                                         <path d="M1 26.6124L18.3149 33.0001L33 25.8113" stroke="#4E433D" stroke-width="1.5"/>
@@ -276,7 +281,7 @@
                                 </div>
                                 <p class="h5">Купим и привезем все материалы</p>
                             </div>
-                            <div class="block">
+                            <div class="block wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">
                                         <path d="M0 6.51721H27" stroke="#4E433D" stroke-width="1.5"/>
@@ -290,7 +295,7 @@
                                 <p class="h5">Вывезем весь мусор после работ</p>
                             </div>
                         </div>
-                        <div class="banner__btns">
+                        <div class="banner__btns wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
                             <button class="banner__call">Консультация специалиста</button>
                             <button class="banner__list">
                                 Как нас найти
@@ -309,7 +314,7 @@
                     <p class="h2 center">Услуги</p>
                 </div>
                 <div class="services__box">
-                    <div class="services__block">
+                    <div class="services__block wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="img">
                             <img src="img/services1.png" alt="">
                         </div>
@@ -328,7 +333,7 @@
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
-                    <div class="services__block">
+                    <div class="services__block wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                         <div class="img">
                             <img src="img/services2.png" alt="">
                         </div>
@@ -347,7 +352,7 @@
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
-                    <div class="services__block">
+                    <div class="services__block wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="img">
                             <img src="img/services3.png" alt="">
                         </div>
@@ -375,7 +380,7 @@
                     <p class="h2 center">Дизайн проект</p>
                 </div>
                 <div class="services__box">
-                    <div class="services__block">
+                    <div class="services__block wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="img">
                             <img src="img/services4.png" alt="">
                         </div>
@@ -393,7 +398,7 @@
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
-                    <div class="services__block">
+                    <div class="services__block wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                         <div class="img">
                             <img src="img/services5.png" alt="">
                         </div>
@@ -411,7 +416,7 @@
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
-                    <div class="services__block">
+                    <div class="services__block wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="img">
                             <img src="img/services6.png" alt="">
                         </div>
@@ -432,7 +437,7 @@
                 </div>
             </div>
         </section>
-        <section class="our_work">
+        <section class="our_work wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="container">
                 <div class="title_h2">
                     <p class="h2 center">Наши работы</p>
@@ -477,7 +482,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="container">
                 <div class="title_h2">
                     <p class="h2 center">Отзывы наших клиентов</p>
@@ -504,7 +509,7 @@
                 </div>
             </div>
         </section>
-        <section class="stock">
+        <section class="stock wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="container">
                 <div class="title_h2">
                     <p class="h2 center">Акции</p>
@@ -548,15 +553,14 @@
         <div class="consultation_wrap">
             <section class="consultation">
                 <div class="consultation__box">
-                    
-                    <div class="consultation__left">
+                    <div class="consultation__left wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <p class="title">Получите консультацию</p>
                         <ul class="ul">
                             <li class="li">По реализации вашего дизайна и организации планировки</li>
                             <li class="li">Выслушаем все идеи, пожелания и изучим референсы</li>
                         </ul>
                     </div>
-                    <div class="consultation__form">
+                    <div class="consultation__form wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                         <div class="input">
                             <input type="text" placeholder="Имя">
                         </div>
@@ -575,7 +579,7 @@
                 </div>
             </section>
         </div>
-        <section class="reviews_slider">
+        <section class="reviews_slider wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="title_h2">
                 <p class="h2 center">Отзывы</p>
             </div>
@@ -633,7 +637,7 @@
         <section class="lists">
             <div class="container">
                 <div class="lists__box">
-                    <div class="lists__block">
+                    <div class="lists__block wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <p class="title">Комплексный ремонт</p>
                         <ul class="ul">
                             <li class="li">Косметический ремонт</li>
@@ -652,7 +656,7 @@
                             <li class="li">Комплексный дизайн-проект</li>
                         </ul>
                     </div>
-                    <div class="lists__block">
+                    <div class="lists__block wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                         <p class="title">Ремонт отдельных помещений</p>
                         <ul class="ul">
                             <li class="li">Ванная комната</li>
@@ -669,7 +673,7 @@
                             <li class="li">Дизайн-проект помещения</li>
                         </ul>
                     </div>
-                    <div class="lists__block">
+                    <div class="lists__block wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
                         <p class="title">Мелкие ремонтные работы</p>
                         <ul class="ul">
                             <li class="li">Отделка стен</li>
