@@ -574,9 +574,12 @@ ul, ol {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .company__right .block {
-  width: 50%;
+  width: 44%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1049,16 +1052,10 @@ ul, ol {
 }
 
 .stock {
-  padding-bottom: 120px;
+  padding-bottom: 70px;
 }
 .stock .title_h2 {
   margin-bottom: 44px;
-}
-
-.stock__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .stock__block {
@@ -1084,12 +1081,13 @@ ul, ol {
   color: #4E433D;
 }
 
-.stock__block:nth-child(3n) {
-  margin-right: 0;
+.consultation_wrap {
+  overflow: hidden;
+  padding-top: 50px;
+  margin-bottom: 105px;
 }
 
 .consultation {
-  margin-bottom: 105px;
   height: 710px;
   background: url(../img/consultation.png) no-repeat center/cover;
 }
@@ -1111,6 +1109,15 @@ ul, ol {
   position: absolute;
   bottom: 0;
   left: 810px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.consultation:hover .consultation__box .iphone {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .consultation__left {
@@ -1618,6 +1625,9 @@ ul, ol {
     padding-top: 12px;
     padding-right: 80px;
   }
+  .company__right .block {
+    width: 41%;
+  }
   .company__left img {
     width: 100%;
     height: auto;
@@ -1975,8 +1985,8 @@ ul, ol {
   }
   .consultation__box .iphone {
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
     width: 278px;
   }
   .services {

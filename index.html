@@ -522,6 +522,10 @@
                         <p class="title">Лист комплектации бесплатно</p>
                         <p class="text">При заказе любого ремонта анализ поставщиков и выбор минимальных цен на материалы бесплатно.</p>
                     </div>
+                    <div class="stock__block">
+                        <p class="title">Лист комплектации бесплатно</p>
+                        <p class="text">При заказе любого ремонта анализ поставщиков и выбор минимальных цен на материалы бесплатно.</p>
+                    </div>
                 </div>
                 <div class="paginator center">
                     <a href="#" class="prev">
@@ -541,34 +545,36 @@
                 </div>
             </div>
         </section>
-        <section class="consultation">
-            <div class="consultation__box">
-                
-                <div class="consultation__left">
-                    <p class="title">Получите консультацию</p>
-                    <ul class="ul">
-                        <li class="li">По реализации вашего дизайна и организации планировки</li>
-                        <li class="li">Выслушаем все идеи, пожелания и изучим референсы</li>
-                    </ul>
+        <div class="consultation_wrap">
+            <section class="consultation">
+                <div class="consultation__box">
+                    
+                    <div class="consultation__left">
+                        <p class="title">Получите консультацию</p>
+                        <ul class="ul">
+                            <li class="li">По реализации вашего дизайна и организации планировки</li>
+                            <li class="li">Выслушаем все идеи, пожелания и изучим референсы</li>
+                        </ul>
+                    </div>
+                    <div class="consultation__form">
+                        <div class="input">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="+7 (XXX) XXX XX XX" class="tel input_phone">
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="E-Mail">
+                        </div>
+                        <button class="btn">Отправить</button>
+                        <p class="text">
+                            При нажатии на кнопку “отправить” я принимаю условия <a href="#">пользовательского соглашения</a>
+                        </p>
+                    </div>
+                    <img src="img/iphone.png" alt="" class="iphone">
                 </div>
-                <div class="consultation__form">
-                    <div class="input">
-                        <input type="text" placeholder="Имя">
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="+7 (XXX) XXX XX XX" class="tel input_phone">
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="E-Mail">
-                    </div>
-                    <button class="btn">Отправить</button>
-                    <p class="text">
-                        При нажатии на кнопку “отправить” я принимаю условия <a href="#">пользовательского соглашения</a>
-                    </p>
-                </div>
-                <img src="img/iphone.png" alt="" class="iphone">
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="reviews_slider">
             <div class="title_h2">
                 <p class="h2 center">Отзывы</p>
@@ -762,24 +768,36 @@
             dots: false,
             speed: 1000,
         });
+        $('.stock__box').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            responsive: [
+                {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: true,
+                }
+                }
+            ]
+        });
         if (window.innerWidth < 1000) {
             $('.our_work__grid').slick({
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: false,
+                arrows: true,
             });
             $('.reviews__box').slick({
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: false,
-            });
-            $('.stock__box').slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: false,
+                arrows: true,
             });
         };
     </script>
