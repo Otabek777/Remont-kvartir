@@ -67,7 +67,24 @@
             </div>
         </header>
     </div>
-    
+    <div class="modal">
+        <div class="consultation__form">
+            <button class="close"></button>
+            <div class="input">
+                <input type="text" placeholder="Имя">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="+7 (XXX) XXX XX XX" class="tel input_phone">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="E-Mail">
+            </div>
+            <button class="btn">Отправить</button>
+            <p class="text">
+                При нажатии на кнопку “отправить” я принимаю условия <a href="#">пользовательского соглашения</a>
+            </p>
+        </div>
+    </div>
     <main class="main">
         <section class="banner">
             <div class="banner__slider">
@@ -79,13 +96,13 @@
                                     <p class="banner__h1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">Ремонт помещений в Новосибирске</p>
                                     <p class="banner__text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Теперь возможно без предоплаты по ценам частных бригад</p>
                                     <div class="banner__btns wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-                                        <button class="banner__call">Заказать звонок</button>
-                                        <button class="banner__list">
+                                        <button class="banner__call open_modal">Заказать звонок</button>
+                                        <a href="#list" class="banner__list">
                                             Прайс лист
                                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="9" viewBox="0 0 21 9" fill="none">
                                                 <path d="M20.8536 4.14645C21.0488 4.34171 21.0488 4.65829 20.8536 4.85355L17.6716 8.03553C17.4763 8.2308 17.1597 8.2308 16.9645 8.03553C16.7692 7.84027 16.7692 7.52369 16.9645 7.32843L19.7929 4.5L16.9645 1.67157C16.7692 1.47631 16.7692 1.15973 16.9645 0.964466C17.1597 0.769204 17.4763 0.769204 17.6716 0.964466L20.8536 4.14645ZM0.5 5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4V5ZM20.5 5H0.5V4H20.5V5Z" fill="#4E433D"/>
                                             </svg>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -103,13 +120,13 @@
                                     <p class="banner__h1">Ремонт помещений в Новосибирске</p>
                                     <p class="banner__text">Теперь возможно без предоплаты по ценам частных бригад</p>
                                     <div class="banner__btns">
-                                        <button class="banner__call">Заказать звонок</button>
-                                        <button class="banner__list">
+                                        <button class="banner__call open_modal">Заказать звонок</button>
+                                        <a href="#list" class="banner__list">
                                             Прайс лист
                                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="9" viewBox="0 0 21 9" fill="none">
                                                 <path d="M20.8536 4.14645C21.0488 4.34171 21.0488 4.65829 20.8536 4.85355L17.6716 8.03553C17.4763 8.2308 17.1597 8.2308 16.9645 8.03553C16.7692 7.84027 16.7692 7.52369 16.9645 7.32843L19.7929 4.5L16.9645 1.67157C16.7692 1.47631 16.7692 1.15973 16.9645 0.964466C17.1597 0.769204 17.4763 0.769204 17.6716 0.964466L20.8536 4.14645ZM0.5 5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4V5ZM20.5 5H0.5V4H20.5V5Z" fill="#4E433D"/>
                                             </svg>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -127,13 +144,13 @@
                                     <p class="banner__h1">Ремонт помещений в Новосибирске</p>
                                     <p class="banner__text">Теперь возможно без предоплаты по ценам частных бригад</p>
                                     <div class="banner__btns">
-                                        <button class="banner__call">Заказать звонок</button>
-                                        <button class="banner__list">
+                                        <button class="banner__call open_modal">Заказать звонок</button>
+                                        <a href="#list" class="banner__list">
                                             Прайс лист
                                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="9" viewBox="0 0 21 9" fill="none">
                                                 <path d="M20.8536 4.14645C21.0488 4.34171 21.0488 4.65829 20.8536 4.85355L17.6716 8.03553C17.4763 8.2308 17.1597 8.2308 16.9645 8.03553C16.7692 7.84027 16.7692 7.52369 16.9645 7.32843L19.7929 4.5L16.9645 1.67157C16.7692 1.47631 16.7692 1.15973 16.9645 0.964466C17.1597 0.769204 17.4763 0.769204 17.6716 0.964466L20.8536 4.14645ZM0.5 5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4V5ZM20.5 5H0.5V4H20.5V5Z" fill="#4E433D"/>
                                             </svg>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -151,13 +168,13 @@
                                     <p class="banner__h1">Ремонт помещений в Новосибирске</p>
                                     <p class="banner__text">Теперь возможно без предоплаты по ценам частных бригад</p>
                                     <div class="banner__btns">
-                                        <button class="banner__call">Заказать звонок</button>
-                                        <button class="banner__list">
+                                        <button class="banner__call open_modal">Заказать звонок</button>
+                                        <a href="#list" class="banner__list">
                                             Прайс лист
                                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="9" viewBox="0 0 21 9" fill="none">
                                                 <path d="M20.8536 4.14645C21.0488 4.34171 21.0488 4.65829 20.8536 4.85355L17.6716 8.03553C17.4763 8.2308 17.1597 8.2308 16.9645 8.03553C16.7692 7.84027 16.7692 7.52369 16.9645 7.32843L19.7929 4.5L16.9645 1.67157C16.7692 1.47631 16.7692 1.15973 16.9645 0.964466C17.1597 0.769204 17.4763 0.769204 17.6716 0.964466L20.8536 4.14645ZM0.5 5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4V5ZM20.5 5H0.5V4H20.5V5Z" fill="#4E433D"/>
                                             </svg>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +186,7 @@
                 </div>
             </div>
         </section>
-        <section class="advantages" id="section1">
+        <section class="advantages" id="#section1">
             <div class="container">
                 <div class="advantages__box">
                     <div class="advantages__block wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
@@ -332,7 +349,7 @@
                             </ul>
                         </div>
                         <div class="bottom">
-                            <button class="btn">Заказать звонок</button>
+                            <button class="btn open_modal">Заказать звонок</button>
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
@@ -351,7 +368,7 @@
                             </ul>
                         </div>
                         <div class="bottom">
-                            <button class="btn">Заказать звонок</button>
+                            <button class="btn open_modal">Заказать звонок</button>
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
@@ -370,7 +387,7 @@
                             </ul>
                         </div>
                         <div class="bottom">
-                            <button class="btn">Заказать звонок</button>
+                            <button class="btn open_modal">Заказать звонок</button>
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
@@ -397,7 +414,7 @@
                             </ul>
                         </div>
                         <div class="bottom">
-                            <button class="btn">Заказать звонок</button>
+                            <button class="btn open_modal">Заказать звонок</button>
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
@@ -415,7 +432,7 @@
                             </ul>
                         </div>
                         <div class="bottom">
-                            <button class="btn">Заказать звонок</button>
+                            <button class="btn open_modal">Заказать звонок</button>
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
@@ -433,7 +450,7 @@
                             </ul>
                         </div>
                         <div class="bottom">
-                            <button class="btn">Заказать звонок</button>
+                            <button class="btn open_modal">Заказать звонок</button>
                             <a href="#" class="link">Подробнее</a>
                         </div>
                     </div>
@@ -778,7 +795,7 @@
                 </div>
             </div>
         </section>
-        <section class="lists">
+        <section class="lists" id="list">
             <div class="container">
                 <div class="lists__box">
                     <div class="lists__block wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -876,7 +893,7 @@
             </div>
             <div class="footer__bottom">
                 <div class="box">
-                    <button class="footer__call">Заказать звонок</button>
+                    <button class="footer__call open_modal">Заказать звонок</button>
                     <div class="left">
                         <a href="#" class="text">Политика конфидециальности</a>
                         <p class="text">©2022 365+ ремонт квартир</p>

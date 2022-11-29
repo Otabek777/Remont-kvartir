@@ -1,9 +1,14 @@
 $(function(){
     $('.header__navbar .item').click(function(){
-         var target = $(this).attr('href');
-         $('html, body').animate({scrollTop: $(target).offset().top}, 800);
-         return false; 
-    }); 
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+        return false; 
+    });
+    $('.banner__list').click(function(){
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+        return false; 
+    });
 });
 
 $(".header__burgir").click(function() {
@@ -42,6 +47,20 @@ $(window).scroll(function(){
 $('.besamogas').on('click', function(){
     $('html, body').animate({
         scrollTop: 0
+    }, 500);
+});
+
+// modal
+$(".open_modal").click(function() {
+    $(".modal").addClass("active");
+    setTimeout(function() {
+        $(".modal").addClass("opacity");
+    }, 1);
+});
+$(".modal .close").click(function() {
+    $(".modal").removeClass("opacity");
+    setTimeout(function() {
+        $(".modal").removeClass("active");
     }, 500);
 });
 
